@@ -20,7 +20,7 @@ var _previous_page : PT.PageType
 ## PageController init function
 func _ready() -> void:
 	## Setting singleton page_controller instance for other scripts to access (if NeonSceneRunner is present)
-	if ProjectSettings.has_setting("autoload/App"):
+	if ProjectSettings.has_setting("autoload/App") and get_tree().root.get_node("App"):
 		get_tree().root.get_node("App")._page_controller = self
 	
 	## Make sure all Pages are disabled at start
