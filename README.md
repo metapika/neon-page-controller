@@ -89,7 +89,7 @@ Firstly, let's discuss the core aspects of the **Plugin.**
 
 # Usage
 
-In any of your scripts you can use the two following functions:
+After making a reference to the PageController Node, in any of your scripts you can use the two following functions:
 
 ```c#
     _page_controller._turn_page_on(PT.PageType _page_on)
@@ -98,6 +98,12 @@ and
 ```c#
     _page_controller._turn_page_off(PT.PageType _page_off)
 ```
+> [!NOTE]
+>If you are using the [NeonSceneRunner](https://github.com/metapika/neon-scene-runner) Addon you can automatically reference the _page_controller singleton by typing:
+```c#
+    App._page_controller.[FUNCTION]
+```
+
 \_turn_page_off function has a **second variation** that allows you to **switch** from **\_page_off** to a new **\_page_on**, instead of just turning off the **\_page_off** Page. You can call it like this:
 ```c#
     _page_controller._turn_page_off(PT.PageType _page_off, PT.PageType _page_on)
