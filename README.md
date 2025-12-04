@@ -21,8 +21,7 @@ A **Godot Plugin** that **manages** **UI Pages** and makes **switching** between
 NeonPageController is a **Godot Plugin/Addon** that makes it boringly easy and straight-forward to **add, remove, manage and switch between UI "Pages"** in your Godot Projects!
 
 ## NeonSceneRunner Plugin
-
-NOTE
+>[!NOTE]
 In order to make **the most out of this Plugin** I reccomend checking out an **Addon** I made called [NeonSceneRunner](https://github.com/metapika/neon-scene-runner) that allows for **great Scene Management** and pairs well with this **UI Page** system! It is not needed, but very much reccomended!
 
 ## What is a "Page"?
@@ -33,7 +32,7 @@ Any game with **more complexity than Pong** will **really benefit** from this **
 
 ## How does it work?
 
-Upon running a Scene that has a "**PageController**" Node in it, the **PageController** script enabled the "**Start Page**" that's currently selected (by default it's the Main Menu). After that any script that has a reference to the **PageController Node** can use the function **\_turn_page_on** and **\_turn_page_off** in order to switch between **UI Pages**. The whole procedure of **enabling and disabling** pages is easy to grasp by anyone curious.
+Upon running a Scene that has a "**PageController**" Node in it, the **PageController** script enables the "**Start Page**" that's currently selected (by default it's the Main Menu). After that any script that has a reference to the **PageController Node** can use the functions: **\_turn_page_on** and **\_turn_page_off** in order to switch between **UI Pages**. The whole procedure of **enabling and disabling** pages is easy to grasp by anyone curious.
 
 # Features
 
@@ -65,7 +64,7 @@ Firstly, let's discuss the core aspects of the **Plugin.**
        > [!CAUTION]
        >Leave the NONE PageType and make sure it's the first one defined as it's used in scripts everywhere and removing will cause many errors.
 4. **With** [NeonSceneRunner](https://github.com/metapika/neon-scene-runner) Addon (**Reccomended**)
-   - In the **Runner.tscn** scene **add** the **PageController Node** by pressing **Ctrl+A** and searching for it.
+   - In the **Runner.tscn** Scene **add** the **PageController Node** by pressing **Ctrl+A** and searching for it. (It will now be available globally by any script by typing **App._page_controller**)
 5. **Without** [NeonSceneRunner](https://github.com/metapika/neon-scene-runner) Addon:
    - In any scene (preferably a new one) **add** the **PageController Node** by pressing **Ctrl+A** and searching for it.
 6.  In the **Inspector** you will see 3 values that you can edit:
